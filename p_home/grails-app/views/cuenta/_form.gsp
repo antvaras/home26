@@ -1,16 +1,5 @@
 <%@ page import="pkg.Cuenta" %>
 
-
-
-<div class="fieldcontain ${hasErrors(bean: cuentaInstance, field: 'cuenta_perfil_usuario', 'error')} required">
-	<label for="cuenta_perfil_usuario">
-		<g:message code="cuenta.cuenta_perfil_usuario.label" default="Cuentaperfilusuario" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="cuenta_perfil_usuario" name="cuenta_perfil_usuario.id" from="${pkg.Cuenta_perfil_usuario.list()}" optionKey="id" required="" value="${cuentaInstance?.cuenta_perfil_usuario?.id}" class="many-to-one"/>
-
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: cuentaInstance, field: 'cuotas', 'error')} required">
 	<label for="cuotas">
 		<g:message code="cuenta.cuotas.label" default="Cuotas" />
