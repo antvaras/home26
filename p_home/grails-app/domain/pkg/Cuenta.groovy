@@ -1,7 +1,7 @@
 package pkg
 
 class Cuenta {
-	Cuenta_perfil_usuario cuenta_perfil_usuario
+	//Cuenta_perfil_usuario cuenta_perfil_usuario
 	String empresa
 	String	producto	
 	Integer	precio
