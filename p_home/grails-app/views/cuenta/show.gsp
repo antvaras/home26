@@ -22,16 +22,7 @@
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
 			<ol class="property-list cuenta">
-			
-				<g:if test="${cuentaInstance?.cuenta_perfil_usuario}">
-				<li class="fieldcontain">
-					<span id="cuenta_perfil_usuario-label" class="property-label"><g:message code="cuenta.cuenta_perfil_usuario.label" default="Cuentaperfilusuario" /></span>
-					
-						<span class="property-value" aria-labelledby="cuenta_perfil_usuario-label"><g:link controller="cuenta_perfil_usuario" action="show" id="${cuentaInstance?.cuenta_perfil_usuario?.id}">${cuentaInstance?.cuenta_perfil_usuario?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
+									
 				<g:if test="${cuentaInstance?.cuotas}">
 				<li class="fieldcontain">
 					<span id="cuotas-label" class="property-label"><g:message code="cuenta.cuotas.label" default="Cuotas" /></span>

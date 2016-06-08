@@ -22,10 +22,8 @@
 			</g:if>
 			<table>
 			<thead>
-					<tr>
-					
-						<th><g:message code="cuenta.cuenta_perfil_usuario.label" default="Cuentaperfilusuario" /></th>
-					
+					<tr>	
+											
 						<g:sortableColumn property="cuotas" title="${message(code: 'cuenta.cuotas.label', default: 'Cuotas')}" />
 					
 						<g:sortableColumn property="empresa" title="${message(code: 'cuenta.empresa.label', default: 'Empresa')}" />
@@ -41,9 +39,7 @@
 				<tbody>
 				<g:each in="${cuentaInstanceList}" status="i" var="cuentaInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
-						<td><g:link action="show" id="${cuentaInstance.id}">${fieldValue(bean: cuentaInstance, field: "cuenta_perfil_usuario")}</g:link></td>
-					
+										
 						<td>${fieldValue(bean: cuentaInstance, field: "cuotas")}</td>
 					
 						<td>${fieldValue(bean: cuentaInstance, field: "empresa")}</td>
