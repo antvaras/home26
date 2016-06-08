@@ -6,7 +6,7 @@ class Cuenta_perfil_usuario {
 	Boolean	ripley
 
 	// Relaciones
-
+	
 	static belongsTo = Usuario
 	static hasMany = [cuentas: Cuenta]
 

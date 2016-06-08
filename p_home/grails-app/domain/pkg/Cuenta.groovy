@@ -10,7 +10,7 @@ class Cuenta {
 
 	// Relaciones
 
-	static belongsTo = Cuenta_perfil_usuario
+	//static belongsTo = Cuenta_perfil_usuario //esta relacion va en la tabla cuenta_perfil_usuario
 
     static constraints = {
     }
